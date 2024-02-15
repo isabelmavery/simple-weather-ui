@@ -1,0 +1,7 @@
+.weather {
+  display: flex;
+  height: 616px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+  width: 1076px;
+  border-radius: 10px;
+}

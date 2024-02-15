@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+@font-face {
+  font-family: "SF Pro Tex";
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
