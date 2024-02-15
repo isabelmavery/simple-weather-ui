@@ -1,4 +1,9 @@
-# Getting Started with Create React App
+# Simple Weather UI
+
+UI for a simple weather app.
+
+<img width="800" alt="image" src="https://github.com/isabelmavery/simple-weather-ui/assets/22804094/46d8adc0-193f-4f5f-9f7b-6b68eb53c088">
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
