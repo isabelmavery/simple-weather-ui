@@ -4,8 +4,8 @@
   "timezone": "America/Los_Angeles",
   "currently": {
     "time": 1582352210,
-    "summary": "Clear",
-    "icon": "clear-night",
+    "summary": "Cloudy",
+    "icon": "cloudy-night",
     "nearestStormDistance": 2,
     "nearestStormBearing": 214,
     "precipIntensity": 0,

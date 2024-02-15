@@ -1,11 +1,15 @@
-import React from "react";
 import "./Weather.css";
 import CurrentWeather, {
   CurrentWeatherProps,
 } from "../../components/CurrentWeather/CurrentWeather";
-import HourlyWeather from "../../components/HourlyWeather/HourlyWeather";
+import HourlyWeather, {
+  HourlyWeatherDetails,
+} from "../../components/HourlyWeather/HourlyWeather";
 
-function Weather(props: any) {
+function Weather(props: {
+  currently: CurrentWeatherProps;
+  hourly: { data: HourlyWeatherDetails[] };
+}) {
   const {
     currently: { icon, humidity, temperature },
     hourly: { data },
@@ -18,7 +22,7 @@ function Weather(props: any) {
       <CurrentWeather
         temperature={temperature}
         icon={icon}
-        humidty={humidity}
+        humidity={humidity}
       />
       <HourlyWeather data={firstSevenDays} />
     </div>

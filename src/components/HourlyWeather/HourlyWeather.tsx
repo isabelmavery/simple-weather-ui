@@ -2,7 +2,16 @@ import React from "react";
 import locationIcon from "../../assets/icons/location-icon.svg";
 import "./HourlyWeather.css";
 
-function HourlyWeatherTable({ data }: { data: any }) {
+export type HourlyWeatherDetails = {
+  precipProbability: number;
+  uvIndex: number;
+  windSpeed: number;
+  humidity: number;
+  temperature: number;
+  time: number;
+};
+
+function HourlyWeatherTable({ data }: { data: HourlyWeatherDetails[] }) {
   if (!data.length) return <div> No weather information found</div>;
 
   return (
@@ -59,7 +68,7 @@ function HourlyWeatherTable({ data }: { data: any }) {
   );
 }
 
-function HourlyWeather(props: any) {
+function HourlyWeather(props: { data: HourlyWeatherDetails[] }) {
   const { data } = props;
   return (
     <div className="hourly-weather">
