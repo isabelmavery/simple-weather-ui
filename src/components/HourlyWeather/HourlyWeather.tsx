@@ -1,5 +1,5 @@
 import React from "react";
-import locationIcon from "../../assets/location-icon.svg";
+import locationIcon from "../../assets/icons/location-icon.svg";
 import "./HourlyWeather.css";
 
 function HourlyWeatherTable({ data }: { data: any }) {
