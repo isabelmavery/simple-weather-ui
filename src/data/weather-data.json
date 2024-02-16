@@ -5,7 +5,7 @@
   "currently": {
     "time": 1582352210,
     "summary": "Cloudy",
-    "icon": "cloudy-night",
+    "icon": "rainy",
     "nearestStormDistance": 2,
     "nearestStormBearing": 214,
     "precipIntensity": 0,

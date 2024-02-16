@@ -67,7 +67,6 @@
 
 .current-weather.rainy .illustration {
   height: var(--cow-icon-size);
-  width: var(--cow-icon-size);
 }
 
 .current-weather.sunny .illustration {
