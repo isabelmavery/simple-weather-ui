@@ -1,6 +1,6 @@
 # Simple Weather UI
 
-UI for a simple weather app.
+UI for a simple weather app. Switch between variations by proceeding to [/src/data/weather-data.json](/src/data/weather-data.json) and changing the value `currently.icon` to either `cloudy`, `sunny` or `rainy`. 
 
 <img width="800" alt="image" src="https://github.com/isabelmavery/simple-weather-ui/assets/22804094/46d8adc0-193f-4f5f-9f7b-6b68eb53c088">
 
