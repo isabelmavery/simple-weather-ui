@@ -1,4 +1,3 @@
-import React from "react";
 import locationIcon from "../../assets/icons/location-icon.svg";
 import "./HourlyWeather.css";
 
@@ -16,16 +15,12 @@ function HourlyWeatherTable({ data }: { data: HourlyWeatherDetails[] }) {
 
   return (
     <div className="hourly-weather-table">
-      <div
-        style={{ textAlign: "right", textTransform: "uppercase", fontSize: 13 }}
-      >
-        Next few hours
-      </div>
+      <div className="table-title">Next few hours</div>
       <table>
         <tr className="time-row">
           <th />
           {data.map(({ time }: { time: number }) => (
-            <th style={{ textTransform: "lowercase", fontSize: 13 }}>
+            <th>
               {new Date(time * 1000).toLocaleString("en-US", {
                 hour: "numeric",
                 hour12: true,
@@ -72,19 +67,11 @@ function HourlyWeather(props: { data: HourlyWeatherDetails[] }) {
   const { data } = props;
   return (
     <div className="hourly-weather">
-      <div className="weather-heading">
-        <div
-          style={{
-            textTransform: "uppercase",
-            fontSize: 18,
-            textAlign: "left",
-          }}
-        >
-          weather in
-        </div>
-        <div style={{ display: "flex", flexDirection: "row" }}>
-          <span style={{ fontSize: 32 }}>Riverdog Farm</span>
-          <img src={locationIcon} style={{ width: 32, height: 32 }} />
+      <div className="hourly-heading">
+        <div className="hourly-label">weather in</div>
+        <div className="hourly-location">
+          <span>Riverdog Farm</span>
+          <img src={locationIcon} />
         </div>
       </div>
       <HourlyWeatherTable data={data} />

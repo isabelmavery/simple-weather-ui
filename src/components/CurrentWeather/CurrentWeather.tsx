@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import "./CurrentWeather.css";
 import cloudy from "../../assets/icons/icon-cloudy.png";
 import rainy from "../../assets/icons/icon-rainy.png";
