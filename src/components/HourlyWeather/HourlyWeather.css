@@ -1,26 +1,18 @@
 .hourly-weather {
-  --font-color: rgba(101, 101, 101, 1);
   --heading-font-size: 32px;
   --heading-label-font-size: 18px;
-  --label-font-size: 14px;
+  --table-label-font-size: 14px;
   --margin-size: 10px;
-
-  color: var(--font-color);
-
-  width: 100%;
-  height: 100%;
-  margin-left: var(--margin-size);
-  margin-right: var(--margin-size);
+  --dark-grey: rgba(101, 101, 101, 1);
 
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-}
-
-.hourly-weather table {
-  border-collapse: separate;
-  border-spacing: 12px;
   width: 100%;
+  height: 100%;
+  margin-left: var(--margin-size);
+  margin-right: var(--margin-size);
+  color: var(--dark-grey);
 }
 
 .hourly-heading {
@@ -49,15 +41,18 @@
 .hourly-weather-table .table-title {
   text-align: right;
   text-transform: uppercase;
-  font-size: var(--label-font-size);
+  font-size: var(--table-label-font-size);
+}
+
+.hourly-weather table {
+  border-collapse: separate;
+  border-spacing: 12px;
+  width: 100%;
 }
 
 .hourly-weather-table th {
   text-transform: lowercase;
-  font-size: var(--label-font-size);
-}
-
-.time-row {
+  font-size: var(--table-label-font-size);
   color: rgba(163, 163, 163, 1);
   margin-bottom: var(--margin-size);
 }

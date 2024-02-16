@@ -17,7 +17,7 @@ function HourlyWeatherTable({ data }: { data: HourlyWeatherDetails[] }) {
     <div className="hourly-weather-table">
       <div className="table-title">Next few hours</div>
       <table>
-        <tr className="time-row">
+        <tr>
           <th />
           {data.map(({ time }: { time: number }) => (
             <th>

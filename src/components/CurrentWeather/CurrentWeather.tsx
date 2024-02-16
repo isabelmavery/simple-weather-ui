@@ -13,7 +13,7 @@ export type CurrentWeatherProps = {
 };
 
 /**
- * Allows styling of gradient and icons on the current weather card dependening on the
+ * Allows styling of gradient and icons on the current weather card depending on the
  * "icon" field of "data.currently"
  */
 function getWeatherDetailsFromIcon(icon: string) {

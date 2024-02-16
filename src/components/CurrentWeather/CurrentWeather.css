@@ -3,6 +3,7 @@
   --sheep-icon-size: 176px;
   --cow-icon-size: 241.32px;
   --penguin-icon-size: 425px;
+  --white: rgba(255, 255, 255, 1);
 
   display: flex;
   flex-direction: column;
@@ -19,7 +20,7 @@
   line-height: 35px;
   letter-spacing: 0em;
   text-align: left;
-  color: rgba(255, 255, 255, 1);
+  color: var(--white);
   padding: 10px;
 }
 
